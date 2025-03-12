@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Chat.Client';
+  date = new Date();
+
+  time = `${this.date.getHours()} : ${this.date.getMinutes()}`
 }
